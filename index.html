@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>个人主页</title>
+    <style>
+        @media screen and (orientation: portrait) {
+            body {
+                background: url(2.jpg);
+                background-size: 123%;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            body {
+                background: url(1.jpg);
+                background-size: 100%;
+            }
+        }
+
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #c9c7c7;
+            padding: 2% 5%;
+            border-radius: 10px;
+            -webkit-filter: opacity(30%);
+            filter: opacity(30%);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3
+        }
+
+        a {
+            color: #20a53a
+        }
+
+        span {
+            font-size: 6px;
+            color: rgb(242, 18, 18);
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎！</h1>
+        <h3>我的小站</h3>
+        <ul>
+            <li><a href="https://集芳阁.com">集芳阁云搜</a></li>
+            <li><a href="https://www.93eb2da35c1f.com/">猫咪</a></li>
+            <li><a href="https://hanime1.me/">H动漫</a></li>
+            <li><a href="https://jmcomic.bet/">禁漫天堂</a></li>
+            <li><a href="http://ne29.vip/">YOUPORN</a></li>
+            <li><a href="https://1jubt.top/">聚BT</a></li>
+            <li><a href="https://fuliadd.com/">第一福利导航</a></li>
+            <li><a href="https://moefuns.asia/">萌翻导航<span>VPN</span></a></li>
+        </ul>
+    </div>
+
+    <!--背景特效-->
+    <script>
+
+        var time;
+        var normar_title = document.title;
+        document.addEventListener('visibilitychange', function () {
+            if (document.visibilityState == 'hidden') {
+                clearTimeout(time);
+                document.title = '客官请留步┏(゜ロ゜;)┛';
+            } else {
+                document.title = '你回来了(。・∀・)ノ';
+                time = setTimeout(function () { document.title = normar_title; }, 3000);
+
+            }
+        });</script>
+</body>
+</html>
